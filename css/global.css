@@ -1,0 +1,19 @@
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+}
+
+body,
+h1,
+ul,
+li,
+p,
+span,
+button {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}

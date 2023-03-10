@@ -1,0 +1,150 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: hsl(216, 12%, 8%);
+}
+
+.container-card {
+  background: hsl(213, 19%, 18%);
+  max-width: 350px;
+  height: 350px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.card-titulo {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  margin: 10px;
+  font-size: 28px;
+}
+
+.card-paragrafo {
+  color: hsl(217, 12%, 63%);
+  font-weight: 400;
+  margin: 10px;
+}
+
+.card-img {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: hsl(217, 12%, 63%, 0.1);
+  padding: 10px;
+  align-self: flex-start;
+  margin: 10px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.rating__option {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: hsl(217, 12%, 63%, 0.1);
+  padding: 15px;
+  text-align: center;
+  color: hsl(217, 12%, 63%);
+  cursor: pointer;
+}
+
+.rating__option:hover {
+  background: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.ativo {
+  background: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+.botao {
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 20px;
+  border-style: none;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  letter-spacing: 2px;
+  cursor: pointer;
+  padding: 12px 130px;
+  margin: 20px 0 10px 0;
+}
+
+.botao:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.botao:disabled {
+  background-color: gray;
+  cursor: no-drop;
+}
+
+.botao:disabled:hover {
+  color: white;
+}
+
+.container-card img {
+  padding: 20px;
+}
+
+.container--texto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+}
+
+.result {
+  color: hsl(25, 97%, 53%);
+  padding: 6px 20px;
+  border-radius: 18px;
+  background-color: hsl(217, 12%, 63%, 0.1);
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.container--texto p {
+  text-align: center;
+  margin: 0px;
+  font-size: 14.5px;
+}
+
+/*CLASSE COM O EVENTO JS PARA TROCAR O CARD A SER VISUALIZADO*/
+.desativar {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .container-card {
+    max-width: 300px;
+    padding: 20px;
+  }
+
+  .rating {
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .botao {
+    padding: 12px 115px;
+    margin: 20px 0 10px 0;
+  }
+}
